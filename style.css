@@ -1,4 +1,45 @@
-* {
+/* RESET + BODY */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+}/* BUTTON */
+.btn {
+  background: white;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+} /* SERVICES */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.service-box {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+/* TESTIMONIALS */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fafafa;
+}
+  /* CONTACT */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -138,4 +179,13 @@ body {
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
+}/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .service-box {
+    width: 90%;
+  }
 }
