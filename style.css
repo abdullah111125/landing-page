@@ -119,3 +119,23 @@ footer {
     flex-direction: column;
   }
 }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+}
+
+.btn {
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
