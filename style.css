@@ -1,171 +1,30 @@
-/* RESET + BODY */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-}
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #667eea, #764ba2);
-  color: white;
-}/* BUTTON */
-.btn {
-  background: white;
-  color: #333;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 25px;
-} /* SERVICES */
-.services {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.service-box {
-  margin: 20px auto;
-  max-width: 400px;
-  padding: 20px;
-  background: #f4f4f4;
-  border-radius: 10px;
-/* TESTIMONIALS */
-.testimonials {
-  text-align: center;
-  padding: 50px 20px;
-  background: #fafafa;
-}
-  /* CONTACT */
-.contact {
-  text-align: center;
-  padding: 50px 20px;
-}{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
 }
 
 /* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: #111;
+  padding: 15px 30px;
+  background: #222;
   color: white;
-  position: sticky;
-  top: 0;
 }
-.nav-links {
+.navbar ul {
   display: flex;
   list-style: none;
 }
-.nav-links li {
+.navbar li {
   margin-left: 20px;
 }
-.nav-links a {
+.navbar a {
   color: white;
   text-decoration: none;
-  transition: 0.3s;
-}
-.nav-links a:hover {
-  color: #00d4ff;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-.hero h1 {
-  font-size: 3rem;
-}
-.hero p {
-  margin: 15px 0;
-}
-.btn {
-  background: #00d4ff;
-  padding: 10px 20px;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* FEATURES */
-.features {
-  padding: 80px 20px;
-  text-align: center;
-}
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-.card {
-  background: #00d4ff;
-  padding: 30px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* ABOUT */
-.about {
-  padding: 80px 20px;
-  text-align: center;
-  background: #f4f4f4;
-}
-
-/* CONTACT */
-.contact {
-  padding: 80px 20px;
-  text-align: center;
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-.contact input, textarea {
-  margin: 10px 0;
-  padding: 10px;
-}
-button {
-  background: #00d4ff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: white;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .cards {
-    flex-direction: column;
-  }
-}
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-}
-
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -173,19 +32,68 @@ body {
   color: white;
 }
 
+/* BUTTON */
 .btn {
   background: white;
   color: #333;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 12px 24px;
   text-decoration: none;
-}/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero {
-    padding: 60px 20px;
-  }
+  border-radius: 25px;
+}
 
-  .service-box {
-    width: 90%;
+/* SERVICES */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 250px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #667eea;
+  color: white;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 50px;
+}
+input, textarea {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+button {
+  padding: 10px 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
